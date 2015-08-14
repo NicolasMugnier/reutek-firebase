@@ -1,0 +1,8 @@
+<h3>Welcome <input type="text" value="{{ user.name }}" /></h3>
+
+<textarea id="message"></textarea>
+<button ng-click="postMessage()">post</button>
+
+<div ng-repeat="message in messages">
+    <p>{{message.author}}: {{ message.text }}</p>
+</div>
